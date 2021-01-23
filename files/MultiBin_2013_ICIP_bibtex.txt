@@ -1,0 +1,8 @@
+@inproceedings{MultiBin_2013_ICIP,
+  title={Multi-bin search: Improved large-scale content-based image retrieval},
+  author={Kamel, Abdelrahman and Mahdi, Youssef B and Hussain, Khaled F},
+  booktitle={Image Processing (ICIP), 2013 20th IEEE International Conference on},
+  pages={2597--2601},
+  year={2013},
+  organization={IEEE}
+}

@@ -1,0 +1,7 @@
+@InProceedings{Cheng_2016_CVPR,
+author = {Cheng, Dongliang and Abdelhamed, Abdelrahman and Price, Brian and Cohen, Scott and Brown, Michael S.},
+title = {Two Illuminant Estimation and User Correction Preference},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2016}
+}

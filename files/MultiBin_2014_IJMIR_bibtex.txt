@@ -1,0 +1,10 @@
+@article{MultiBin_2014,
+  title={Multi-bin search: improved large-scale content-based image retrieval},
+  author={Kamel, Abdelrahman and Mahdy, Youssef B and Hussain, Khaled F},
+  journal={International Journal of Multimedia Information Retrieval},
+  volume={4},
+  number={3},
+  pages={205--216},
+  year={2015},
+  publisher={Springer}
+}

@@ -1,0 +1,6 @@
+@InProceedings{MarkWhite_2019_GI,
+author = {Abdelhamed, Abdelrahman and MacKenzie, I. Scott and Brown, Michael S.},
+title = {MarkWhite: An Improved Interactive White-Balance Method for Smartphone Cameras},
+booktitle = {Graphics Interface (GI)},
+year = {2019}
+}
