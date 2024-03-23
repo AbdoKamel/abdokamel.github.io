@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIDD</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/ico" />
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- for slider -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+    <div class="head-container">
+        <div class="head-container">
+            <div style="width: 100%; text-align:center;">
+                <h2>Smartphone Image Denoising Dataset</h2>
+                <p>
+                    <a href="https://abdokamel.github.io/" target="_blank" rel="noopener">Abdelrahman
+                        Abdelhamed</a><sup>1</sup>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="https://www.microsoft.com/en-us/research/people/stevelin/" target="_blank"
+                        rel="noopener">Stephen Lin</a><sup>2</sup>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <a href="https://www.eecs.yorku.ca/~mbrown/" target="_blank">Michael S. Brown</a><sup>1</sup>
+                </p>
+
+                <p>
+                    <sup>1</sup><a href="http://eecs.lassonde.yorku.ca/" target="_blank" rel="noopener">York
+                        University</a>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    <sup>2</sup><a href="https://www.microsoft.com/en-us/research/" target="_blank"
+                        rel="noopener">Microsoft Research</a>
+
+                </p>
+            </div>
+        </div>
+        <p>
+            <a href="http://130.63.97.225/sidd/benchmark_submit.php" class="button-block">Click here to submit your
+                results</a>
+        </p>
+        <div class="entry grey-back">
+            <i>
+                <p>
+                    A new version of SIDD Benchmark (<b>SIDD+</b>) is being hosted as a challenge at the <a
+                        target="_blank" href="http://www.vision.ee.ethz.ch/en/ntire20/">New Trends in Image Restoration
+                        and Enhancement (NTIRE 2020) workshop</a> in conjunction with <a target="_blank"
+                        href="http://cvpr2020.thecvf.com/">CVPR 2020</a>.
+                    <br>
+                    The participating solutions and results will be published in the challenge report in the CVPR 2020
+                    Workshop proceedings.
+                </p>
+                <p>
+                    Challenges can be accessed at the following Codalab competitions:
+                    <br>
+                    <a target="_blank" href="https://competitions.codalab.org/competitions/22230">NTIRE 2020 Real Image
+                        Denoising Challenge - Track 1 - rawRGB</a>
+                    <br>
+                    <a target="_blank" href="https://competitions.codalab.org/competitions/22231">NTIRE 2020 Real Image
+                        Denoising Challenge - Track 2 - sRGB</a>
+                </p>
+            </i>
+        </div>
+        <figure class="cd-image-container">
+            <img src="img/NOISY_SRGB_010_.png" alt="Noisy Image">
+            <span class="cd-image-label" data-type="original">Noisy</span>
+
+            <div class="cd-resize-img"> <!-- the resizable image on top -->
+                <img src="img/GT_SRGB_010_.png" alt="Ground Truth Image">
+                <span class="cd-image-label" data-type="modified">Ground Truth</span>
+            </div>
+            <span class="cd-handle"></span>
+        </figure> <!-- cd-image-container -->
+    </div>
+    <div class="body-container">
+        <h1>Abstract</h1>
+        <p>
+            The last decade has seen an astronomical shift from imaging with DSLR and point-and-shoot cameras to imaging
+            with smartphone cameras. Due to the small aperture and sensor size, smartphone images have notably more
+            noise than their DSLR counterparts. While denoising for smartphone images is an active research area, the
+            research community currently lacks a denoising image dataset representative of real noisy images from
+            smartphone cameras with high-quality ground truth. We address this issue in this paper with the following
+            contributions. We propose a systematic procedure for estimating ground truth for noisy images that can be
+            used to benchmark denoising performance for smartphone cameras. Using this procedure, we have captured a
+            dataset, the Smartphone Image Denoising Dataset (SIDD), of ~30,000 noisy images from 10 scenes under
+            different lighting conditions using five representative smartphone cameras and generated their ground truth
+            images. We used this dataset to benchmark a number of denoising algorithms. We show that CNN-based methods
+            perform better when trained on our high-quality dataset than when trained using alternative strategies, such
+            as low-ISO images used as a proxy for ground truth data.
+        </p>
+
+        <h1>Papers</h1>
+        <p>
+            Abdelrahman Abdelhamed, Lin S., Brown M. S. "A High-Quality Denoising Dataset for Smartphone Cameras", IEEE
+            Computer Vision and Pattern Recognition <b>(CVPR)</b>, June 2018.
+        </p>
+        <p>
+            [<a href="files/SIDD_CVPR_2018.pdf" target="_blank" rel="noopener"><b>PDF</b></a>] &nbsp;
+            [<a href="#" onclick="javascript:toggleBibtex('SIDDBibtex'); return false;"
+                title="Show/Hide Bibtex"><b>Bibtex</b></a>]
+        </p>
+        <div id="SIDDBibtex" style="display:none;">
+            <code style="white-space: pre-line;">@InProceedings{SIDD_2018_CVPR,
+					author = {Abdelhamed, Abdelrahman and Lin, Stephen and Brown, Michael S.},
+					title = {A High-Quality Denoising Dataset for Smartphone Cameras},
+					booktitle = {IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+					month = {June},
+					year = {2018}
+				}</code>
+        </div>
+        <p>
+            Abdelrahman Abdelhamed, Timofte R., Brown M. S., et al. "NTIRE 2019 Challenge on Real Image Denoising:
+            Methods and Results", IEEE Computer Vision and Pattern Recognition Workshops <b>(CVPRW)</b>, June 2019.
+        </p>
+        <p>
+            [<a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/NTIRE/Abdelhamed_NTIRE_2019_Challenge_on_Real_Image_Denoising_Methods_and_Results_CVPRW_2019_paper.pdf"
+                target="_blank" rel="noopener"><b>PDF</b></a>] &nbsp;
+            [<a href="#" onclick="javascript:toggleBibtex('NTIREBibtex'); return false;"
+                title="Show/Hide Bibtex"><b>Bibtex</b></a>]
+        </p>
+        <div id="NTIREBibtex" style="display:none;">
+            <code style="white-space: pre-line;">@InProceedings{Abdelhamed_2019_CVPR_Workshops,
+					author = {Abdelhamed, Abdelrahman and Timofte, Radu and Brown, Michael S. and others},
+					title = {NTIRE 2019 Challenge on Real Image Denoising: Methods and Results},
+					booktitle = {The IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+					month = {June},
+					year = {2019}
+				}</code>
+        </div>
+        <h1>Code</h1>
+        <p>
+            <a href="https://github.com/AbdoKamel/sidd-ground-truth-image-estimation" target="_blank"
+                rel="noopener"><b>Ground-truth image estimation</b></a>
+        </p>
+        <p>
+            <a href="https://github.com/AbdoKamel/simple-camera-pipeline" target="_blank" rel="noopener"><b>A simple
+                    camera pipeline</b></a> for rendering raw-RGB images into sRGB.
+        </p>
+        <h1>License</h1>
+        <p>The dataset and the associated code repositories are under the MIT License.</p>
+        <h1>Contact</h1>
+        <p>
+            For any questions, remarks, or comments, please contact: <a
+                href="mailto:abdoukamel@gmail.com?subject=SIDD">Abdelrahman Abdelhamed</a>.
+        </p>
+    </div>
+    <div class="footer">
+    </div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script type="text/javascript" id="clustrmaps"
+        src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=100&t=tt&d=6uI6fWhTRLqfKkvEqmoA8WE3G0NVLiwBNW5Zl-6i4Ig"></script>
+</body>
+
+</html>
